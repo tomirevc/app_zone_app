@@ -15,6 +15,8 @@ import com.google.android.material.button.MaterialButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
+import android.widget.Button
+
 class MainActivity : AppCompatActivity() {
     
     private lateinit var auth: FirebaseAuth
@@ -57,7 +59,9 @@ class MainActivity : AppCompatActivity() {
         
         // Configurar listeners
         setupClickListeners()
-        
+        setupGameFeatures()
+
+
         Log.d(TAG, "MainActivity iniciado para usuario: ${currentUser.email}")
     }
     
@@ -193,6 +197,20 @@ class MainActivity : AppCompatActivity() {
         if (currentUser == null) {
             Log.d(TAG, "Usuario no autenticado en onStart, redirigiendo...")
             redirectToLogin()
+        }
+    }
+
+    private fun setupGameFeatures() {
+        // Botón para agregar juego
+        val btnAddGame = findViewById<Button>(R.id.btnAddGame)
+        btnAddGame.setOnClickListener {
+            startActivity(Intent(this, AddGameActivity::class.java))
+        }
+
+        // Botón para ver juegos
+        val btnViewGames = findViewById<Button>(R.id.btnViewGames)
+        btnViewGames.setOnClickListener {
+            startActivity(Intent(this, GamesListActivity::class.java))
         }
     }
 }

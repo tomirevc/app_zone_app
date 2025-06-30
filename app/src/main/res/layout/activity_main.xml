@@ -82,7 +82,7 @@
                 android:id="@+id/btn_logout"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:text="@string/btn_logout"
                 android:textColor="@color/gaming_red"
                 android:textSize="12sp"
@@ -93,6 +93,8 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+
 
     <!-- Contenido principal -->
     <ScrollView
@@ -122,6 +124,45 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-black" />
+
+            <!-- Botones para juegos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:spacing="8dp">
+
+                <Button
+                    android:id="@+id/btnAddGame"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Agregar Juego"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/gaming_neon_green"
+                    android:textColor="@android:color/white"
+                    android:padding="12dp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <Button
+                    android:id="@+id/btnViewGames"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Ver Juegos"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/gaming_cyan"
+                    android:textColor="@android:color/white"
+                    android:padding="12dp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
 
             <!-- Grid de opciones gaming -->
             <GridLayout
@@ -153,7 +194,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_neon_green" />
+                            app:tint="@color/gaming_neon_green" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -190,7 +231,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_highlight" />
+                            app:tint="@color/gaming_highlight" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -227,7 +268,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_purple" />
+                            app:tint="@color/gaming_purple" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -264,7 +305,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_cyan" />
+                            app:tint="@color/gaming_cyan" />
 
                         <TextView
                             android:layout_width="wrap_content"
