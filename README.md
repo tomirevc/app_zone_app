@@ -11,13 +11,12 @@ Una aplicación Android moderna con **Firebase Authentication** y tema gaming co
 - ✅ Login/Registro con email y contraseña  
 - ✅ Login anónimo (modo invitado)  
 - ✅ Validaciones y manejo de errores  
+![Image](https://github.com/user-attachments/assets/d67d7c39-46e9-41a5-9298-129b482f675a) 
+![Image](https://github.com/user-attachments/assets/f7a47f3f-0521-4c5c-ab10-3a46f2d54918)   
 
-![Image](https://github.com/user-attachments/assets/f7a47f3f-0521-4c5c-ab10-3a46f2d54918) 
-![Image](https://github.com/user-attachments/assets/d67d7c39-46e9-41a5-9298-129b482f675a)  
-
-- ✅ Verificación de email  
-![Image](https://github.com/user-attachments/assets/eecdbda2-cfae-4259-8756-61b85d0aa07b) 
-![Image](https://github.com/user-attachments/assets/691b9a35-6ee2-495e-8953-4d43b552a8b3)  
+- ✅ Verificación de email
+- ![Image](https://github.com/user-attachments/assets/691b9a35-6ee2-495e-8953-4d43b552a8b3) 
+![Image](https://github.com/user-attachments/assets/eecdbda2-cfae-4259-8756-61b85d0aa07b)   
 
 - ✅ Inicio y logout seguro   
 ![Image](https://github.com/user-attachments/assets/380dbc58-702f-43d9-a766-04927de6f240)  
